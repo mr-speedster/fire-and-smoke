@@ -16,7 +16,7 @@ while(True):
         cv2.rectangle(frame,(x-20,y-20),(x+w+20,y+h+20),(255,0,0),2)
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = frame[y:y+h, x:x+w]
-        # print("fire is detected")
+        print("fire is detected")
         playsound('audio.mp3')
 
     cv2.imshow('frame', frame)
